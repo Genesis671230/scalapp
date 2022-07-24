@@ -28,7 +28,7 @@ const Ecommerce = () => {
   const [total, settotal] = useState({});
 
   const getTableData = async () => {
-    const fetchData = await fetch('https://144.126.220.228:8080/gettables');
+    const fetchData = await fetch('https://appmeterics-chnoumankahoot.vercel.app/apps');
     const dataAPI = await fetchData.json();
     setapiData(dataAPI);
     console.log(dataAPI);
