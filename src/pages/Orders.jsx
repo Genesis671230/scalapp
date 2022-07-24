@@ -180,7 +180,7 @@ const Orders = () => {
 
   useEffect(() => {
     const getTableData = async () => {
-      const fetchData = await fetch('http://144.126.220.228:8080/gettables');
+      const fetchData = await fetch('https://144.126.220.228:8080/gettables');
       const dataAPI = await fetchData.json();
       setapiData(dataAPI);
     };
